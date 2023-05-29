@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "gjaldon",
+  "risk": "2",
+  "title": "Host can instantly set `rageQuitTimestamp` and prevent members from rage quitting",
+  "issueId": 4,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/4"
+}
