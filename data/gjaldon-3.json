@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "gjaldon",
+  "risk": "2",
+  "title": "accept() can be delayed or gas-griefed by burning a governance NFT",
+  "issueId": 3,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/3"
+}
