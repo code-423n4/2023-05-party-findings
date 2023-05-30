@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "hansfriese",
+  "risk": "2",
+  "title": "Users might lose funds after calling `rageQuit()` by malicious frontrunners.",
+  "issueId": 9,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/9"
+}
