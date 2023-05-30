@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "d3e4",
+  "risk": "3",
+  "title": "Fairness should be denominated in `mintedVotingPower` rather than `totalVotingPower`",
+  "issueId": 27,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/27"
+}
