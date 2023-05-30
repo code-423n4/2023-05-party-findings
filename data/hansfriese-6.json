@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "hansfriese",
+  "risk": "3",
+  "title": "The distribution logic will be broken after calling `rageQuit()`",
+  "issueId": 6,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/6"
+}
