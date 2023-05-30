@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "0x52",
+  "risk": "2",
+  "title": "Users can bypass distributions fees by ragequitting instead of using a formal distribution",
+  "issueId": 12,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/12"
+}
