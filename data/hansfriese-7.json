@@ -1,0 +1,8 @@
+{
+  "contest": 245,
+  "handle": "hansfriese",
+  "risk": "2",
+  "title": "Users can withdraw more funds if the party has tokens with multiple addresses.",
+  "issueId": 7,
+  "issueUrl": "https://github.com/code-423n4/2023-05-party-findings/issues/7"
+}
