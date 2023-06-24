@@ -779,7 +779,8 @@ Replace `type(uint96).max` in the above code with `VETO_VALUE` for clarity and e
 For this audit, 2 reports were submitted by wardens detailing gas optimizations. The [report highlighted below](https://github.com/code-423n4/2023-05-party-findings/issues/21) by **adriro** received the top score from the judge.
 
 *The following warden also submitted a report: [d3e4](https://github.com/code-423n4/2023-05-party-findings/issues/31).*
-# PartyGovernance contract
+
+## PartyGovernance contract
 
 - The new storage variable `lastBurnTimestamp` of type `uint40` was added below other short storage variables (`emergencyExecuteDisabled`, `feeBps` and `feeRecipient`) presumably with the intention of being tightly packed into a single slot. As this variable `lastBurnTimestamp` isn't used in conjunction with the other variables in the slot, there isn't any advantage to this behavior and will only introduce overhead gas costs due to packing.  
   https://github.com/code-423n4/2023-05-party/blob/main/contracts/party/PartyGovernance.sol#L203
@@ -787,7 +788,7 @@ For this audit, 2 reports were submitted by wardens detailing gas optimizations.
 - The new check for `lastBurnTimestamp == block.timestamp` can be moved up in the function in order to have this checked earlier. This would save gas in case of a revert because the checks above are more costly in terms of the involved operations.  
   https://github.com/code-423n4/2023-05-party/blob/main/contracts/party/PartyGovernance.sol#L596-L598
   
-# PartyGovernanceNFT contract
+## PartyGovernanceNFT contract
 
 - Similar to the case in the PartyGovernance contract, the new storage variable `rageQuitTimestamp` of type `uint40` is being accommodated below other short storage variables (`tokenCount` and `mintedVotingPower`) to have it tightly packed in a single slot. As this variable isn't used in combination with the others, this packing only incurs extra gas costs due to overhead.  
   https://github.com/code-423n4/2023-05-party/blob/main/contracts/party/PartyGovernanceNFT.sol#L55
